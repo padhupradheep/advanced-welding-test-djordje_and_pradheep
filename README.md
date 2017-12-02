@@ -1,27 +1,26 @@
-# Advanced Welding Test - [Team Name]
+# Advanced Welding Test - [Team 1]
 
-((Setup travis and include your badge here))
-
-A small description of what your project is.
+Implementation of cartesian trajectory controller for youbot arm.
 
 ## Team members
-*   Name LastName - [@githubusername](https://github.com/githubusername)
-*   Name LastName - [@githubusername](https://github.com/githubusername)
+*   Djordje Vukcevic - [@DjoleMNE](https://github.com/DjoleMNE)
+*   Pradheep Krishna Muthukrishnan Padmanabhan - [@padhupradheep](https://github.com/padhupradheep)
 
 
-## Known Issues / Todo's
-
-Mention the current limitations or issues for the package.
--   [ ] The biggest issue
--   [ ] Another important issue
+## Todo's
+-   [ ] Moving the youbot arm using velocity commands
+-   [ ] Setting up the catkin workspace and cloning mas_common_robotics and mas_industrial_robotics into the workspace.
+-   [ ] Git setup
+-   [ ] Travis setup
 
 ## Introduction
-A small description of the functionalities found here and how they work. Remember to cite any relevant references [1].
+This project deals with implementation of a cartesian trajectory controller on a youbot arm in order to pass the advanced welding test from RoboCup. The desired cartesian position is fed into the cartesian trajectory controller. The controller moves the arm in a smooth line motion to the pre-fed goal position. 
 
 ## Packages
 
-*   (meta)package name - one line description
-*   ..
+*   ROS - The Robot Operating System (ROS) is a flexible framework for writing robot software. It is a collection of tools, libraries, and conventions that aim to simplify the task of creating complex and robust robot behavior across a wide variety of robotic platforms [1] 
+*   KDL - The Kinematics and Dynamics Library (KDL) develops an application independent framework for modelling and computation of kinematic chains of robots. [2]
+*   mas_common_robotics and mas_industrial_robotics 
 
 
 ## Getting Started
@@ -29,10 +28,9 @@ A small description of the functionalities found here and how they work. Remembe
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
 
 ### Prerequisites
-*   Ubuntu version
-*   Ros version
-*   Dependency one
-*   ..
+*   Ubuntu 14.04
+*   Ros Indigo
+*   Orocos(KDL)
 
 #### First dependency
 
