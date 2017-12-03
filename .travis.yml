@@ -2,6 +2,15 @@ language: cpp
 
 compiler:
   - gcc
-  - clang
-  
+
 sudo: enabled
+
+env:
+  global:
+    - ROS_DISTRO=indigo
+
+script:
+  - source /opt/ros/$ROS_DISTRO/setup.bash
+  - cd ~/catkin_ws
+  - catkin build
+  - source devel/setup.bash
