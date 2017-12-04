@@ -77,7 +77,7 @@ before_install:
   - source /opt/ros/$ROS_DISTRO/setup.bash
   # Prepare rosdep to install dependencies.
   - sudo rosdep init
-  - sudo apt-get install python-catkin-tools 
+  - sudo apt-get install python-catkin-tools
   - rosdep update
 
 # Create a catkin workspace with the package under integration.
@@ -118,7 +118,7 @@ before_script:
 script:
   - source /opt/ros/$ROS_DISTRO/setup.bash
   - cd ~/catkin_ws
-  - catkin_make $( [ -f $CATKIN_OPTIONS ] && cat $CATKIN_OPTIONS )
+  - catkin build $( [ -f $CATKIN_OPTIONS ] && cat $CATKIN_OPTIONS )
   # Run the tests, ensuring the path is set correctly.
   - source devel/setup.bash
   - catkin build
