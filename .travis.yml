@@ -78,6 +78,7 @@ before_install:
   # Prepare rosdep to install dependencies.
   - sudo rosdep init
   - sudo apt-get install python-catkin-tools
+  - pip install pytest-cov
   - rosdep update
 
 # Create a catkin workspace with the package under integration.
