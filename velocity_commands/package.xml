@@ -8,7 +8,7 @@
 
   <!-- One maintainer tag required, multiple allowed, one person per tag -->
   <maintainer email="djordje.vukcevic@smail.inf.h-brs.de">Djordje Vukcevic</maintainer>
-
+  <maintainer email="pradheep.muthukrishnan@smail.inf.h-brs.de">Pradheep Krishna Muthukrishnan Padmanabhan</maintainer>
 
   <!-- One license tag required, multiple allowed, one license per tag -->
   <license>BSD</license>
