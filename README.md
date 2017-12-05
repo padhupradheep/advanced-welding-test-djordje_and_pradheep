@@ -32,7 +32,7 @@ These instructions will get you a copy of the project up and running on your loc
 *   Ros Indigo
 *   Orocos(KDL)
 
-###Running the velocity command node
+### Running the velocity command node
 *  roslaunch velocity_commands velocity_commands.launch 
 For testing the samw node 
 *  rosrun velocity_commands velocity_commands_node_test.py 
