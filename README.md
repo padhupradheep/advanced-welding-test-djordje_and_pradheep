@@ -32,56 +32,11 @@ These instructions will get you a copy of the project up and running on your loc
 *   Ros Indigo
 *   Orocos(KDL)
 
-#### First dependency
-
-What things you need to install the software and how to install them
-
-```
-Give examples
-```
-
-### Installing
-
-A step by step series of examples that tell you have to get your components running
-
-Say what the step will be
-
-```
-Give the example
-```
-
-And repeat
-
-```
-until finished
-```
-
-End with an example of getting some data out of the system or using it for a little demo
-
-## Running the test in simulation
-
-Explain how to run the test in simulation
-
-### Break down into smaller steps
-
-Explain what these components do and what the user should see when running them
-
-```
-Give an example
-```
-
-### And some other components
-
-Explain what these components do and what the user should see when running them
-
-```
-Give an example
-```
-
-## Running on the robot
-
-Add additional notes about how to run this on youBot
-
+###Running the velocity command node
+*  roslaunch velocity_commands velocity_commands.launch 
+For testing the samw node 
+*  rosrun velocity_commands velocity_commands_node_test.py 
 
 ## References
-*   X
+*   http://www.ros.org/
+*   http://www.orocos.org/kdl/
