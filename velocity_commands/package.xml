@@ -8,10 +8,10 @@
 
   <!-- One maintainer tag required, multiple allowed, one person per tag -->
   <maintainer email="djordje.vukcevic@smail.inf.h-brs.de">Djordje Vukcevic</maintainer>
-
+  <maintainer email="pradheep.muthukrishnan@smail.inf.h-brs.de">Pradheep Krishna Muthukrishnan Padmanabhan</maintainer>
 
   <!-- One license tag required, multiple allowed, one license per tag -->
-  <license>BSD</license>
+  <license>MIT</license>
 
 
   <!-- Url tags are optional, but multiple are allowed, one per tag -->
@@ -23,6 +23,7 @@
   <!-- Author tags are optional, multiple are allowed, one per tag -->
   <!-- Authors do not have to be maintainers, but could be -->
   <author email="djordje.vukcevic@smail.inf.h-brs.de">Djordje Vukcevic</author>
+  <author email="pradheep.muthukrishnan@smail.inf.h-brs.de">Pradheep Krishna Muthukrishnan Padmanabhan</author>
 
 
   <!-- The *depend tags are used to specify dependencies -->

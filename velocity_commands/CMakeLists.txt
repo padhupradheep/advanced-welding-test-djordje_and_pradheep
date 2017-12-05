@@ -198,4 +198,8 @@ target_link_libraries(${PROJECT_NAME}_node
 # endif()
 
 ## Add folders to be run by python nosetests
-# catkin_add_nosetests(test)
+if(CATKIN_ENABLE_TESTING)
+  find_package(rostest REQUIRED)
+  catkin_add_nosetests(test/velocity_commands_node_test.py)
+  #target_link_libraries(velocity_commands_node_test ${catkin_LIBRARIES})
+endif()
