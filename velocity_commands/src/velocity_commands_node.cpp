@@ -36,6 +36,7 @@ int main(int argc, char **argv)
     double angular_x = 0;
     double angular_y = 0;
     double angular_z = 0;
+    // std::string frame = "arm_link_5";
 
     ros::NodeHandle node_handle("~");
     node_handle.getParam("linear_x", linear_x);
@@ -44,14 +45,15 @@ int main(int argc, char **argv)
     node_handle.getParam("angular_x", angular_x);
     node_handle.getParam("angular_y", angular_y);
     node_handle.getParam("angular_z", angular_z);
+    // node_handle.getParam("frame", frame);
 
     geometry_msgs::TwistStamped velocity;
 
     ros::Publisher velocity_publisher = \
-    node_handle.advertise<geometry_msgs::TwistStamped>("/mcr_manipulation/mcr_arm_cartesian_control/cartesian_velocity_command", 1);
+    node_handle.advertise<geometry_msgs::TwistStamped>("/arm_1/arm_controller/cartesian_velocity_command", 1);
 
     ros::Rate loop_rate(50);
-    velocity.header.frame_id = "gripper_motor_mount_link";
+    // velocity.header.frame_id = frame;
     velocity.twist.linear.x = linear_x;
     velocity.twist.linear.y = linear_y;
     velocity.twist.linear.z = linear_z;
