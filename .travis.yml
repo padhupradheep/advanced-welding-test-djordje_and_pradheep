@@ -120,6 +120,15 @@ before_script:
 addons:
   sonarcloud:
     organization: "djole2" # the key of the org you chose at step #3
+    token:
+        secure: "Gw8GFDb9V85ZHUfLUMe86th4yDuPCUCPFlM6xRfSj4a9f/GjVyvZBp0wYi2tAICzSo4VbFRNqDaj3mvW3m6GfEY0USkO1m3phGix
+    7TFd5Imq94DrlcW8b90V6zacnZjfLAqLKtD8P+vE3NW2dIDEe48lZw1zAlSIaY5A0FxNEfnZHXWjip1OJz/t6NRyHOqiNBq8Q4FRCN/02uMJBET
+    gMbMsDeBz60vEqaR/5GgrySrXL7Xfilb0Mf3UU2e10+pZJKiNedyxAUiukWe0if3Bm+xjHTw8lxcGSRBku/RmQ5zKyYyZPuGnrvjeKmHTfJhrdb
+    k+i6zMcp1qiy7uqi+td/2K03oW5NEmD6cBixr8pQ1C/zgIOf5UacXEYZjm5MHNJSyB3S36z51V54e0J05G4yC1C5T8ZdbIbXVqOEnrCr5A81khy
+    A9/+5gyziaFo0PkMNCtDXo+rngVJsKbxacrL5ce50lZxDoaOQZvdnzKs0BxO1l+RKnSS1PoejoN6XlyKXROBBFCfkdlqFANVMfwCYQb+uN+no3f
+    sgPJAgK6EJZNHhOKA711RgEkJvwYPxI8DrkfCBT0OH5wG8H16sWKuFoK6gtA0QJhOMC1fMK//N7lr5BkPSsyRxWRzEyr5q+s7fa/c+WzUi8HX6W
+    ePqK6f7q7azQNjW6l62u/HBdVe38="
+
 
 script:
   - sonar-scanner
