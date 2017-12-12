@@ -116,7 +116,14 @@ before_script:
 # (gtest, nosetest, etc..) but always returns 0 (success) even if a test
 # fails. Running `catkin_test_results` aggregates all the results and returns
 # non-zero when a test fails (which notifies Travis the build failed).
+
+addons:
+  sonarcloud:
+    organization: "djolemne-github" # the key of the org you chose at step #3
+    token: 6145d7c42dfa1dd0d92138fe879328b77df635a5 # encrypted value of your token
+
 script:
+  - sonar-scanner
   - source /opt/ros/$ROS_DISTRO/setup.bash
   - cd ~/catkin_ws
   - catkin_make $( [ -f $CATKIN_OPTIONS ] && cat $CATKIN_OPTIONS )
