@@ -119,8 +119,7 @@ before_script:
 
 addons:
   sonarcloud:
-    organization: "djole-rm" # the key of the org you chose at step #3
-    token: 6cde351b4bf86f05a5789b71279bb042263091e8 # encrypted value of your token
+    organization: "djole2" # the key of the org you chose at step #3
 
 script:
   - sonar-scanner
