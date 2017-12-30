@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<launch>
+    <node pkg="mir_awt_trajectory_generator" type="awt_trajectory_generator" name="awt_trajectory_generator_node" output="screen">
+    <param name="type" value="sine"/>
+    <param name="phase" value="0.0"/>
+    <param name="amplitude" value="100.0"/>
+    <param name="num_steps" value="5"/>
+    <param name="time_step" value="0.01"/>
+    </node>
+</launch>

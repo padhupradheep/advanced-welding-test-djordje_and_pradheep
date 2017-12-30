@@ -6,13 +6,14 @@ import rospy
 import rostest
 from std_msgs.msg import String
 from geometry_msgs.msg import TwistStamped
-PKG = 'velocity_commands'
+PKG = 'mir_awt_trajectory_generator'
+
 class TestVelocityCommand(unittest.TestCase):
 
     def setUp(self):
         self.result = TwistStamped()
         self.wait_for_result = False
-        rospy.Subscriber("/mcr_manipulation/mcr_arm_cartesian_control/cartesian_velocity_command",TwistStamped,self.callback)
+        self.component_output = rospy.Subscriber("/arm_1/arm_controller/cartesian_velocity_command",TwistStamped,self.callback)
 
     def test1(self):
         while not self.wait_for_result:
@@ -31,16 +32,18 @@ class TestVelocityCommand(unittest.TestCase):
     def test3(self):
         while not self.wait_for_result:
             pass
-        self.assertEquals('arm_link_5', self.result.header.frame_id, "Incorrect link published")
+        self.assertEquals('arm_link_0', self.result.header.frame_id, "Incorrect link published")
 
     def callback(self,msg):
         self.result = msg
         self.wait_for_result = True
 
     def tearDown(self):
-        pass
-
+        """
+        Deconstructs the test fixture after testing it.
+        """
+        self.component_output.unregister()
 
 if __name__ == '__main__':
-    rospy.init_node('velocity_commands_node_test')
-    rostest.rosrun(PKG, 'velocity_commands_node_test', TestVelocityCommand)
+    rospy.init_node('velocity_commands_test')
+    rostest.rosrun(PKG, 'velocity_commands_test', TestVelocityCommand)

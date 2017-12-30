@@ -1,9 +1,10 @@
 <?xml version="1.0"?>
 <package format="2">
-  <name>velocity_commands</name>
+  <name>mir_awt_trajectory_generator</name>
   <version>0.0.0</version>
   <description>
-      Velocity commands for moving youBot arm
+      Velocity commands for moving youBot arm, for solving Advances Welding Test.
+      Commands are computed based on desired trajectory, specified by RoboCup task.
   </description>
 
   <!-- One maintainer tag required, multiple allowed, one person per tag -->
