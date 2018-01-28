@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<launch>
+    <arg name="arm_name" default="arm_1"/>
+    <node pkg="mir_awt_trajectory_generator" type="awt_trajectory_generator" name="awt_trajectory_generator_node" output="screen">
+    <param name="type" value="sine"/>
+    <param name="phase" value="0.0"/>
+    <param name="amplitude" value="20"/>
+    <param name="num_steps" value="40"/>
+    <param name="time_step" value="0.01"/>
+    <param name="loop_freq" value="4"/>
+    <param name="x_unit_gain" value="8"/>
+    <param name="y_unit_gain" value="3"/>
+    <param name="side" value="right"/>
+    <param name="cycles" value="1"/>
+    </node>
+    <node pkg="mir_awt_trajectory_generator" type="awt_trajectory_simulator_node.py" name="awt_trajectory_simulator_node" output="screen">
+    </node>
+
+</launch>

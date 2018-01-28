@@ -2,7 +2,7 @@
 
 Implementation of cartesian trajectory controller for youbot arm.
 
-[![Build Status](https://travis-ci.org/HBRS-RM/advanced-welding-test-djordje_and_pradheep.svg?branch=develop)](https://travis-ci.org/HBRS-RM/advanced-welding-test-djordje_and_pradheep)
+[![Build Status](https://travis-ci.org/HBRS-RM/advanced-welding-test-djordje_and_pradheep.svg?branch=master)](https://travis-ci.org/HBRS-RM/advanced-welding-test-djordje_and_pradheep)
 
 ## Team members
 *   Djordje Vukcevic - [@DjoleMNE](https://github.com/DjoleMNE)
