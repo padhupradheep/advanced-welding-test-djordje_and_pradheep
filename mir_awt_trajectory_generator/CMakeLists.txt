@@ -5,7 +5,11 @@ find_package(catkin REQUIRED COMPONENTS
   geometry_msgs
   #kdl_parser
   roscpp
+  sensor_msgs
   rospy
+  trajectory_msgs
+  brics_actuator
+  interactive_markers
   std_msgs
 )
 
@@ -22,6 +26,9 @@ pkg_search_module(Eigen3 REQUIRED eigen3)
 catkin_package(
  INCLUDE_DIRS include
  CATKIN_DEPENDS geometry_msgs kdl_parser roscpp rospy std_msgs
+   trajectory_msgs
+   sensor_msgs
+   brics_actuator
  #DEPENDS system_lib
 )
 
@@ -45,7 +52,8 @@ add_dependencies(awt_trajectory_generator
 )
 
 install(
-  TARGETS awt_trajectory_generator
+  TARGETS
+   awt_trajectory_generator
   RUNTIME DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION}
 )
 
